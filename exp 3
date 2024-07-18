@@ -1,0 +1,8 @@
+org 0000h 
+ mov r1,#4h 
+ mov r0,41h 
+L2:  add a, @r0 
+ inc r0 
+ djnz r1,L2 
+ mov 45h,a 
+ end
